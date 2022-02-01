@@ -1264,6 +1264,10 @@
   .trends-menu-list-item a {
     font-size: 11px;
   }
+
+  .trends-name {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1550,6 +1554,10 @@
 
   .trends-menu-list-item a {
     font-size: 11px;
+  }
+
+  .trends-name {
+    font-size: 15px;
   }
 }
 
