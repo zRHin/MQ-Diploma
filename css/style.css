@@ -1258,9 +1258,11 @@
   .trends-menu-list li:nth-child(n+2){
     margin-left: 10px;
   }
+}
 
+@media (min-width: 641px) and (max-width: 875px) and (orientation: landscape) {
   .trends-menu-list-item a {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
