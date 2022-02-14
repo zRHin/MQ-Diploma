@@ -1088,8 +1088,8 @@
   }
 
   .header-content {
-    width: 698px;
-    padding: 0 0 114px;
+    width: 100%;
+    padding: 0 35px 114px;
   }
 
   .header-container {
@@ -1156,21 +1156,25 @@
   }
 
   .page-content {
-    width: 698px;
+    width: 100%;
 
-    padding: 40px 0 64px;
+    padding: 40px 35px 64px;
   }
 
   .card {
+    width: calc(100vw - 377px);
+    min-width: 390px;
+
     flex-wrap: wrap;
   }
 
   .card-img {
-    width: 391px;
+    width: calc(100vw - 377px);
+    min-width: 390px;
   }
 
   .card-content {
-    width: 391px;
+    width: 100%;
     padding-top: 16px;
     margin-left: 0;
   }
@@ -1187,10 +1191,16 @@
     margin-bottom: 0;
   }
 
+  .aside-column {
+    min-width: 272px;
+    max-width: 272px;
+    margin-left: 35px;
+  }
+
   .shop {
-    width: 698px;
-    padding-right: 0;
-    padding-left: 0;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   .shop-title {
@@ -1202,13 +1212,20 @@
   }
 
   .shop-card {
+    min-width: calc(50% - 11px);
+    max-width: calc(50% - 11px);
     padding-top: 23px;
 
-    flex: 0 1 337px;
+    flex: 0 1 calc(50vw - 61px);
+  }
+
+  .shop-card:nth-child(2n+2) {
+    margin-left: 22px;
   }
 
   .shop-card-img {
-    width: 290px;
+    min-width: 290px;
+    width: calc(50vw - 91px);
   }
 
   .shop-content {
@@ -1224,14 +1241,20 @@
   }
 
   .footer-content {
-    width: 698px;
-    padding-right: 0;
+    width: 100%;
+    padding-right: 35px;
     padding-bottom: 40px;
-    padding-left: 0;
+    padding-left: 35px;
   }
 
   .copyright {
     margin: 50px auto 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    order: 3;
   }
 }
 
@@ -1293,9 +1316,9 @@
   }
 
   .header-content {
-    width: 330px;
-    padding-right: 0;
-    padding-left: 0;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 207px;
   }
 
@@ -1382,9 +1405,9 @@
   }
 
   .page-content {
-    width: 330px;
+    width: 100%;
 
-    padding: 44px 0 36px;
+    padding: 44px 15px 36px;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
@@ -1404,7 +1427,8 @@
   }
 
   .card-img {
-    width: 330px;
+    width: calc(100vw - 30px);
+    min-width: 330px;
   }
 
   .card-content {
@@ -1430,10 +1454,12 @@
   }
 
   .aside-column {
-    width: 330px;
+    width: 100%;
   }
 
   .aside-name {
+    width: 100%;
+    
     font-size: 16px;
 
     padding-bottom: 5px;
@@ -1464,9 +1490,9 @@
   }
 
   .shop {
-    width: 330px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .shop-title {
@@ -1480,11 +1506,12 @@
   .shop-card {
     padding-top: 24px;
 
-    flex: 0 1 330px;
+    flex: 0 1 auto;
   }
 
   .shop-card-img {
-    width: 285px;
+    width: calc(100vw - 76px);
+    min-width: 290px;
   }
 
   .shop-content {
@@ -1509,9 +1536,9 @@
   }
 
   .footer-content {
-    width: 330px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .copyright {
